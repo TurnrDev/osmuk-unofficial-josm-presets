@@ -1,0 +1,72 @@
+<presets author="JayTurnr" version="1.0" shortdescription="NaPTAN Public Transport v2 Presets">
+  <item name="Bus Stop (NaPTAN/Active)" type="node">
+    <link href="https://wiki.openstreetmap.org/wiki/NaPTAN/Tag_mappings" />
+    <key key="highway" value="bus_stop" match="keyvalue" />
+    <key key="public_transport" value="platform" match="keyvalue" />
+    <key key="source" value="naptan_import" match="none" />
+    <key key="bus" match="none" />
+    <text key="naptan:AtcoCode" text="ATCOCode" default="" delete_if_empty="true" match="key" />
+    <text key="naptan:NaptanCode" text="NaptanCode" default="" delete_if_empty="true" match="key" />
+    <text key="ref" text="Reference" default="" delete_if_empty="true" />
+    <space />
+    <text key="naptan:CommonName" text="CommonName" default="" delete_if_empty="true"/>
+    <text key="name" text="Name" default="" delete_if_empty="true" />
+    <space />
+    <text key="naptan:ShortCommonName" text="ShortCommonName" default="" delete_if_empty="true"/>
+    <text key="short_name" default="" delete_if_empty="true"/>
+    <space />
+    <text key="naptan:Landmark" text="Landmark" default="" delete_if_empty="true"/>
+    <text key="naptan:Street" text="Street" default="" delete_if_empty="true" />
+    <space />
+    <text key="naptan:Crossing" text="Crossing" default="" delete_if_empty="true"/>
+    <space />
+    <combo key="naptan:Indicator" text="Indicator" values="adj,opp,o/s,N-bound,E-bound,S-bound,W-bound,NE-bound,SE-bound,SW-bound,NW-bound" values_sort="false"/>
+    <text key="local_ref" default="" delete_if_empty="true"/>
+    <combo key="naptan:Bearing" text="Bearing" values="N,E,S,W,NE,SE,SW,NW" values_sort="false"/>
+    <space />
+    <combo key="naptan:BusStopType" text="BusStopType" default="MKD" values="MKD,CUS,HAR,FLX" display_values="MKD (MarkedPoint),CUS (UnmarkedPoint),HAR (HailAndRideSection),FLX (FlexibleZone)" values_sort="false"/>
+    <space />
+    <text key="source:date" text="ModificationDate" default="" delete_if_empty="true" use_last_as_default="true" />
+    <text key="naptan:RevisionNumber" text="RevisionNumber" default="" delete_if_empty="true"/>
+    <check key="naptan:status" text="Active" default="on" value_on="act" value_off="del" match="keyvalue" />
+    <check key="naptan:verified" text="Verified" default="off" />
+    <preset_link preset_name="Bus Stop" />
+    <preset_link preset_name="Platform" />
+    <preset_link preset_name="Bus Stop (NaPTAN/Deleted)" />
+  </item>
+  <item name="Bus Stop (NaPTAN/Deleted)" type="node">
+    <link href="https://wiki.openstreetmap.org/wiki/NaPTAN/Tag_mappings" />
+    <key key="disused:highway" value="bus_stop" match="keyvalue"/>
+    <key key="disused:public_transport" value="platform" match="keyvalue"/>
+    <key key="source" value="naptan_import" match="none" />
+    <key key="bus" match="none" />
+    <key key="highway" match="none" />
+    <key key="public_transport" match="none" />
+    <text key="naptan:AtcoCode" text="ATCOCode" default="" delete_if_empty="true" match="key" />
+    <text key="naptan:NaptanCode" text="NaptanCode" default="" delete_if_empty="true" match="key" />
+    <text key="ref" text="Reference" default="" delete_if_empty="true" />
+    <space />
+    <text key="naptan:CommonName" text="CommonName" default="" delete_if_empty="true"/>
+    <text key="name" text="Name" default="" delete_if_empty="true" />
+    <space />
+    <text key="naptan:ShortCommonName" text="ShortCommonName" default="" delete_if_empty="true"/>
+    <text key="short_name" default="" delete_if_empty="true"/>
+    <space />
+    <text key="naptan:Landmark" text="Landmark" default="" delete_if_empty="true"/>
+    <text key="naptan:Street" text="Street" default="" delete_if_empty="true" />
+    <space />
+    <text key="naptan:Crossing" text="Crossing" default="" delete_if_empty="true"/>
+    <space />
+    <combo key="naptan:Indicator" text="Indicator" values="adj,opp,o/s,N-bound,E-bound,S-bound,W-bound,NE-bound,SE-bound,SW-bound,NW-bound" values_sort="false"/>
+    <text key="local_ref" default="" delete_if_empty="true"/>
+    <combo key="naptan:Bearing" text="Bearing" values="N,E,S,W,NE,SE,SW,NW" values_sort="false"/>
+    <space />
+    <combo key="naptan:BusStopType" text="BusStopType" default="MKD" values="MKD,CUS,HAR,FLX" display_values="MKD (MarkedPoint),CUS (UnmarkedPoint),HAR (HailAndRideSection),FLX (FlexibleZone)" values_sort="false"/>
+    <space />
+    <text key="source:date" text="ModificationDate" default="" delete_if_empty="true" use_last_as_default="true" />
+    <text key="naptan:RevisionNumber" text="RevisionNumber" default="" delete_if_empty="true"/>
+    <check key="naptan:status" text="Active" default="off" value_on="act" value_off="del" match="keyvalue!" />
+    <check key="naptan:verified" text="Verified" default="off" />
+    <preset_link preset_name="Bus Stop (NaPTAN/Active)" />
+  </item>
+</presets>
