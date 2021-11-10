@@ -28,7 +28,7 @@
     <space />
     <text key="source:date" text="ModificationDate" default="" delete_if_empty="true" use_last_as_default="true" />
     <text key="naptan:RevisionNumber" text="RevisionNumber" default="" delete_if_empty="true"/>
-    <check key="naptan:status" text="Active" default="on" value_on="act" value_off="del" match="keyvalue" />
+    <check key="naptan:Status" text="Active" default="on" value_on="act" value_off="del" match="keyvalue" />
     <check key="naptan:verified" text="Verified" default="off" />
     <preset_link preset_name="Bus Stop" />
     <preset_link preset_name="Platform" />
@@ -65,7 +65,7 @@
     <space />
     <text key="source:date" text="ModificationDate" default="" delete_if_empty="true" use_last_as_default="true" />
     <text key="naptan:RevisionNumber" text="RevisionNumber" default="" delete_if_empty="true"/>
-    <check key="naptan:status" text="Active" default="off" value_on="act" value_off="del" match="keyvalue!" />
+    <check key="naptan:Status" text="Active" default="off" value_on="act" value_off="del" match="keyvalue!" />
     <check key="naptan:verified" text="Verified" default="off" />
     <preset_link preset_name="Bus Stop (NaPTAN/Active)" />
   </item>
